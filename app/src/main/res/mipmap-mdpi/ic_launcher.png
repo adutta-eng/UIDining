@@ -1,0 +1,69 @@
+package edu.illinois.cs.cs125.fall2019.mp;
+
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+
+public class AreaDivider {
+    /**
+     * @param latitude of the north boundary
+     */
+    private double north;
+
+    /**
+     * @param longitude of the east boundary
+     */
+    private double east;
+
+    /**
+     * @param latitude of south boundary
+     */
+    private double south;
+
+    /**
+     * @param longitude of west boundary
+     */
+    private double west;
+
+    /**
+     * @param the requested side length of each cell, in meters
+     */
+    private double cellSize;
+
+
+    AreaDivider(final double setNorth, final double setEast, final
+        double setSouth, final double setWest, final double setCellSize) {
+        north = setNorth;
+        east = setEast;
+        south = setSouth;
+        west = setWest;
+        cellSize = setCellSize;
+
+    }
+
+    /**
+     * @param x = x coordinate
+     * @param y = y coordinate
+     * @return boundaries of cell containing giving x and y coordinates
+     */
+    public com.google.android.gms.maps.model.LatLngBounds getCellBounds(final int x, final int y) {
+//        LatLngBounds boundary = new LatLngBounds(LatLng.Constructor(x *
+//                cellSize, y * cellSize), LatLng((x + 1) * cellSize, (y + 1) * cellSize));
+        double left = east - (getXCells() * x);
+        double right = east - (getXCells() * (x + 1));
+        double bottom = north - (getYCells() * y);
+        double top = north - (getYCells() * (y + 1));
+        return new LatLngBounds(new LatLng(bottom, left), new LatLng(top, right));
+    }
+
+    /***
+     * @return number of cells in the x direction
+     */
+    public int getXCells() {
+        return (int) Math.ceil(LatLngUtils.distance(north, east, north, west) / cellSize);
+    }
+
+    /**
+     * @param location = location in terms of latitude and longitude
+     * @return x coordinate of location
+     */
+    public int getXCoordinate(final com.google.a
