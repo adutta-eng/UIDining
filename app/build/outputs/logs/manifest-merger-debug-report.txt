@@ -43,6 +43,10 @@ INJECTED from C:\Users\aisha\AndroidStudioProjects\UIDining\app\src\main\Android
 		INJECTED from C:\Users\aisha\AndroidStudioProjects\UIDining\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\aisha\AndroidStudioProjects\UIDining\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\aisha\AndroidStudioProjects\UIDining\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\aisha\AndroidStudioProjects\UIDining\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from C:\Users\aisha\AndroidStudioProjects\UIDining\app\src\main\AndroidManifest.xml:5:5-19:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\aisha\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
