@@ -681,6 +681,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable uihomepage
 id ALT
 id CTRL
 id FUNCTION
@@ -778,7 +779,9 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView2
 id info
+id inputPreference
 id invisible
 id italic
 id left
@@ -786,6 +789,7 @@ id line1
 id line3
 id listMode
 id list_item
+id mealOptions
 id message
 id middle
 id multiply
