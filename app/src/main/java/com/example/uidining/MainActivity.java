@@ -2,6 +2,7 @@ package com.example.uidining;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -26,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final TextView textView = findViewById(R.id.text);
         Button pref = findViewById(R.id.inputPreference);
+        pref.setOnClickListener(unused -> {
+            startActivity(new Intent(this, InputPreferences.class));
+        });
         Button options = findViewById(R.id.mealOptions);
         RequestQueue queue = Volley.newRequestQueue(this);
         String url ="http://uiuc-api2.herokuapp.com/dining/2/2019-12-02/2019-12-02";

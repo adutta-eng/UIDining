@@ -744,6 +744,7 @@ id add
 id alertTitle
 id always
 id async
+id back
 id barrier
 id beginning
 id blocking
@@ -770,9 +771,11 @@ id end
 id expand_activities_button
 id expanded_menu
 id forever
+id glutenFree
 id gone
 id group_divider
 id groups
+id halal
 id home
 id homeAsUp
 id icon
@@ -805,6 +808,7 @@ id packed
 id parent
 id parentPanel
 id percent
+id preferences
 id progress_circular
 id progress_horizontal
 id radio
@@ -864,6 +868,7 @@ id unchecked
 id uniform
 id up
 id useLogo
+id vegetarian
 id withText
 id wrap
 id wrap_content
@@ -907,6 +912,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_input_preferences
 layout activity_main
 layout custom_dialog
 layout notification_action
