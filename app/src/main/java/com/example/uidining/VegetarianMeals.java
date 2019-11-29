@@ -68,8 +68,8 @@ public class VegetarianMeals extends AppCompatActivity {
             List<Item> items = Arrays.asList(gson.fromJson(mealItemsArray.toString(),Item[].class));
             for (Item item : items) {
                 if(item.getTraits().contains("Vegetarian")) {
-                    View mealChunk = getLayoutInflater().inflate(R.layout.meal_chunk, mealsList, false);
                     System.out.println(item.getFormalName());
+                    View mealChunk = getLayoutInflater().inflate(R.layout.meal_chunk, mealsList, false);
                     TextView formalName = mealChunk.findViewById(R.id.formalName);
                     formalName.setText(item.getFormalName());
                     TextView meal = mealChunk.findViewById(R.id.meal);

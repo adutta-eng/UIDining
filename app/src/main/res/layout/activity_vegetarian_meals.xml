@@ -6,22 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".VegetarianMeals">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/vegetarianMeals"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:text="Vegetarian Meals" />
+        tools:layout_editor_absoluteY="731dp">
 
         <LinearLayout
-            android:id="@+id/mealsList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"></LinearLayout>
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vegetarianMeals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vegetarian Meals"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:id="@+id/mealsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
