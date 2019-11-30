@@ -760,7 +760,6 @@ id chains
 id checkbox
 id checked
 id chronometer
-id classicDiningHalls
 id classicHalls
 id collapseActionView
 id content

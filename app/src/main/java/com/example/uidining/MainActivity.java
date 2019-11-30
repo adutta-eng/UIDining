@@ -25,30 +25,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final TextView textView = findViewById(R.id.text);
+//        final TextView textView = findViewById(R.id.text);
         Button pref = findViewById(R.id.inputPreference);
         pref.setOnClickListener(unused -> {
             startActivity(new Intent(this, InputPreferences.class));
         });
         Button options = findViewById(R.id.mealOptions);
-        RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://uiuc-api2.herokuapp.com/dining/2/2019-12-02/2019-12-02";
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
-                new Response.Listener<JSONObject>() {
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        try {
-                            textView.setText("this worked" + response.get("Menus"));
-                        } catch(JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                textView.setText("That didn't work!");
-            }
-        });
-        queue.add(jsonObjectRequest);
-    }
+//        RequestQueue queue = Volley.newRequestQueue(this);
+//        String url ="http://uiuc-api2.herokuapp.com/dining/2/2019-12-02/2019-12-02";
+//        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
+//                new Response.Listener<JSONObject>() {
+//                    @Override
+//                    public void onResponse(JSONObject response) {
+//                        try {
+//                            textView.setText("this worked" + response.get("Menus"));
+//                        } catch(JSONException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                textView.setText("That didn't work!");
+//            }
+//        });
+//        queue.add(jsonObjectRequest);
+   }
 }

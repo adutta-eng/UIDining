@@ -1,5 +1,6 @@
 package com.example.uidining;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,13 +33,19 @@ public class VegetarianMeals extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vegetarian_meals);
-        connect();
+        Button backButton = findViewById(R.id.back);
+        backButton.setOnClickListener(unused -> {
+            startActivity(new Intent(this, SelectDiningHall.class));
+        });
+        Intent intent = getIntent();
+        connect(intent.getIntExtra("HallID", 1), intent.getStringExtra("Date"));
     }
 
     //retrieve JSON object from API and set up UI accordingly
-    private void connect(){
+    private void connect(int diningId, String date){
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://uiuc-api2.herokuapp.com/dining/2/2019-12-02/2019-12-02";
+//        String url ="http://uiuc-api2.herokuapp.com/dining/2/2019-12-02/2019-12-02";
+        String url = "http://uiuc-api2.herokuapp.com/dining/" + diningId + "/" + date + "/" + date;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
                     @Override
