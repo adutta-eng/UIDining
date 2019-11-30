@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.uidining.SelectDiningHall" />
         <activity android:name="com.example.uidining.VegetarianMeals" />
         <activity android:name="com.example.uidining.InputPreferences" />
         <activity android:name="com.example.uidining.MainActivity" >

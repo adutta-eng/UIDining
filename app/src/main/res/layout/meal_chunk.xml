@@ -14,7 +14,7 @@
         android:textColor="#4754c8"
         android:textSize="20sp"
         app:fontFamily="sans-serif-condensed-medium"
-        app:textAllCaps="true" />
+        app:textAllCaps="false" />
 
     <TextView
         android:id="@+id/meal"

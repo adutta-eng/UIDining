@@ -14,7 +14,7 @@ public class InputPreferences extends AppCompatActivity {
         setContentView(R.layout.activity_input_preferences);
         Button vegetarian = findViewById(R.id.vegetarian);
         vegetarian.setOnClickListener(unused -> {
-            startActivity(new Intent(this, VegetarianMeals.class));
+            startActivity(new Intent(this, SelectDiningHall.class));
         });
         Button gf = findViewById(R.id.glutenFree);
         Button halal = findViewById(R.id.halal);

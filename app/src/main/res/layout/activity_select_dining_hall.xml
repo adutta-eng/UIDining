@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectDiningHall">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/hallList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/classicHalls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Classic Dining Halls"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/ikenberryHall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ikenberry Dining Hall" />
+
+            <Button
+                android:id="@+id/par"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAR Dining Hall" />
+
+            <Button
+                android:id="@+id/buseyEvans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Busey Evans Dining Hall" />
+
+            <Button
+                android:id="@+id/lar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LAR Dining Hall" />
+
+            <Button
+                android:id="@+id/far"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAR Dining Hall" />
+
+            <Button
+                android:id="@+id/blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blue 41" />
+
+            <Button
+                android:id="@+id/orangeOnGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Orange On Green" />
+
+            <TextView
+                android:id="@+id/aLaCarte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="A La Carte" />
+
+            <Button
+                android:id="@+id/north"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="57 North" />
+
+            <Button
+                android:id="@+id/caffeinator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caffeinator" />
+
+            <Button
+                android:id="@+id/ignite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ignite" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">UIDining</string>
+    <string name="classic_hall_prompt">Classic Dining Halls</string>
+    <string-array name="classic_hall_list">
+        <item>Ikenberry Dining Hall</item>
+        <item>PAR Dining Hall</item>
+        <item>Busey Evans Dining Hall</item>
+        <item>LAR Dining Hall</item>
+        <item>FAR Dining Hall</item>
+        <item>Blue 41</item>
+        <item>Orange on Green</item>
+    </string-array>
 </resources>
