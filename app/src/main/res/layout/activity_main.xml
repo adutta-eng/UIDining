@@ -29,6 +29,12 @@
                 android:text="What should I consume today?" />
 
             <Button
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Where Should I Go?" />
+
+            <Button
                 android:id="@+id/mealOptions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
