@@ -16,6 +16,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
             <TextView
                 android:id="@+id/classicHalls"
                 android:layout_width="match_parent"
