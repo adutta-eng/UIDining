@@ -29,6 +29,5 @@ public class LocationActivity extends AppCompatActivity {
         ike.setOnClickListener(unused -> {
             startActivity(new Intent(this, MainActivity.class));
         });
-
     }
 }
