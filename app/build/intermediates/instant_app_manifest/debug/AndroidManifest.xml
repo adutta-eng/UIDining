@@ -24,6 +24,7 @@
         <activity android:name="com.example.uidining.SelectDiningHall" />
         <activity android:name="com.example.uidining.VegetarianMeals" />
         <activity android:name="com.example.uidining.InputPreferences" />
+        <activity android:name="com.example.uidining.LocationActivity" />
         <activity android:name="com.example.uidining.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
