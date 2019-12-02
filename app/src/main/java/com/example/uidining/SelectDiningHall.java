@@ -26,6 +26,8 @@ public class SelectDiningHall extends AppCompatActivity {
         backButton.setOnClickListener(unused -> {
             startActivity(new Intent(this, InputPreferences.class));
         });
+        String formattedDate = rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH);
+
         Button ikenberryHall = findViewById(R.id.ikenberryHall);
         ikenberryHall.setOnClickListener(unused -> {
             System.out.println(rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
@@ -100,5 +102,10 @@ public class SelectDiningHall extends AppCompatActivity {
             intent.putExtra("Restriction", dietaryPref);
             startActivity(intent);
         });
+
+//        Button backtoPrefs = findViewById(R.id.backToPrefs);
+//        backtoPrefs.setOnClickListener(unused -> {
+//            startActivity(new Intent(this, InputPreferences.class));
+//        });
     }
 }

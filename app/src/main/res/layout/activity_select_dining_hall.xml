@@ -16,6 +16,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+<!--                android:id="@+id/backToPrefs"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Return To Preferences" />-->
+>>>>>>> d7ad8ea5ed7fe9385ccd26fe5cc812cb31dcd824
+
             <Button
                 android:id="@+id/back"
                 android:layout_width="match_parent"
@@ -99,4 +105,5 @@
                 android:text="Ignite" />
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
