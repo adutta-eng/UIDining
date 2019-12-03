@@ -19,18 +19,17 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class LocationActivity extends AppCompatActivity {
+public class InformationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_location);
-        Button ike = findViewById(R.id.ikenberryHall2);
+        setContentView(R.layout.activity_information);
+        Button ike = findViewById(R.id.ikenberryHall3);
         ike.setOnClickListener(unused -> {
             startActivity(new Intent(this, HallInformationActivity.class));
         });
-
-        Button back = findViewById(R.id.locationBack);
+        Button back = findViewById(R.id.informationBack);
         back.setOnClickListener(unused -> {
             startActivity(new Intent(this, MainActivity.class));
         });

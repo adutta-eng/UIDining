@@ -380,6 +380,10 @@
         "source": "/Users/suchetan/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-v21/abc_dialog_material_background.xml"
     },
     {
+        "merged": "/Users/suchetan/AndroidStudioProjects/UIDining/app/build/intermediates/res/merged/debug/layout_activity_information.xml.flat",
+        "source": "/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/res/layout/activity_information.xml"
+    },
+    {
         "merged": "/Users/suchetan/AndroidStudioProjects/UIDining/app/build/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat",
         "source": "/Users/suchetan/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/layout/select_dialog_singlechoice_material.xml"
     },
@@ -810,6 +814,10 @@
     {
         "merged": "/Users/suchetan/AndroidStudioProjects/UIDining/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/Users/suchetan/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/suchetan/AndroidStudioProjects/UIDining/app/build/intermediates/res/merged/debug/layout_hall_information.xml.flat",
+        "source": "/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/res/layout/hall_information.xml"
     },
     {
         "merged": "/Users/suchetan/AndroidStudioProjects/UIDining/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat",

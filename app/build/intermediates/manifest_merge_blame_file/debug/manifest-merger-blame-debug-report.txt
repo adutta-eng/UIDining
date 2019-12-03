@@ -15,7 +15,7 @@
 11-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:7:5-25:19
+13-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:7:5-27:19
 14        android:allowBackup="true"
 14-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -44,20 +44,26 @@
 26        <activity android:name="com.example.uidining.LocationActivity" />
 26-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:17:9-54
 26-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:17:19-51
-27        <activity android:name="com.example.uidining.MainActivity" >
-27-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:18:9-24:20
-27-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:18:19-47
-28            <intent-filter>
-28-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:19:13-23:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:20:17-69
-29-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:20:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:22:17-77
-31-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:22:27-74
-32            </intent-filter>
-33        </activity>
-34    </application>
-35
-36</manifest>
+27        <activity android:name="com.example.uidining.InformationActivity" />
+27-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:18:9-57
+27-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:18:19-54
+28        <activity android:name="com.example.uidining.HallInformationActivity" />
+28-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:19:9-61
+28-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:19:19-58
+29        <activity android:name="com.example.uidining.MainActivity" >
+29-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:20:9-26:20
+29-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:20:19-47
+30            <intent-filter>
+30-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:21:13-25:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:22:17-69
+31-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:22:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:24:17-77
+33-->/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/AndroidManifest.xml:24:27-74
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

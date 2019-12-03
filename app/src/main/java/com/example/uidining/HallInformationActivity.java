@@ -3,6 +3,7 @@ package com.example.uidining;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,21 +20,22 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class LocationActivity extends AppCompatActivity {
+public class HallInformationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_location);
-        Button ike = findViewById(R.id.ikenberryHall2);
-        ike.setOnClickListener(unused -> {
-            startActivity(new Intent(this, HallInformationActivity.class));
-        });
+        setContentView(R.layout.hall_information);
 
-        Button back = findViewById(R.id.locationBack);
+        Button back = findViewById(R.id.backToInfo);
         back.setOnClickListener(unused -> {
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, InformationActivity.class));
         });
 
+        Button maps = findViewById(R.id.maps);
+        Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.103946, -88.235378"));
+        maps.setOnClickListener(unused -> {
+            startActivity(intent);
+        });
     }
 }

@@ -22,6 +22,12 @@
                 android:src="@drawable/uihomepage" />
 
             <Button
+                android:id="@+id/information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dining Hall Information" />
+
+            <Button
                 android:id="@+id/inputPreference"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
@@ -32,7 +38,8 @@
                 android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Where Should I Go?" />
+                android:text="Where Should I Go?"
+                android:visibility="gone" />
 
             <Button
                 android:id="@+id/mealOptions"

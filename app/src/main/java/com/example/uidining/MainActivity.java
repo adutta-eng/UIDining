@@ -30,9 +30,15 @@ public class MainActivity extends AppCompatActivity {
         pref.setOnClickListener(unused -> {
             startActivity(new Intent(this, InputPreferences.class));
         });
+        /*
         Button location = findViewById(R.id.location);
         location.setOnClickListener(unused -> {
             startActivity(new Intent(this, LocationActivity.class));
+        });
+        */
+        Button information = findViewById(R.id.information);
+        information.setOnClickListener(unused -> {
+            startActivity(new Intent(this, InformationActivity.class));
         });
         Button options = findViewById(R.id.mealOptions);
 //        RequestQueue queue = Volley.newRequestQueue(this);
