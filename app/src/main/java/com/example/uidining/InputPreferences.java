@@ -14,10 +14,22 @@ public class InputPreferences extends AppCompatActivity {
         setContentView(R.layout.activity_input_preferences);
         Button vegetarian = findViewById(R.id.vegetarian);
         vegetarian.setOnClickListener(unused -> {
-            startActivity(new Intent(this, SelectDiningHall.class));
+            Intent intent = new Intent(this, SelectDiningHall.class);
+            intent.putExtra("Restriction", "Vegetarian");
+            startActivity(intent);
         });
         Button gf = findViewById(R.id.glutenFree);
+        gf.setOnClickListener(unused -> {
+            Intent intent = new Intent(this, SelectDiningHall.class);
+            intent.putExtra("Restriction", "Gluten");
+            startActivity(intent);
+        });
         Button halal = findViewById(R.id.halal);
+        halal.setOnClickListener(unused -> {
+            Intent intent = new Intent(this, SelectDiningHall.class);
+            intent.putExtra("Restriction", "Halal");
+            startActivity(intent);
+        });
         Button home = findViewById(R.id.back);
         home.setOnClickListener(unused -> {
             startActivity(new Intent(this, MainActivity.class));

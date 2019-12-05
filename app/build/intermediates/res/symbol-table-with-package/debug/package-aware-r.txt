@@ -913,6 +913,7 @@ id textSpacerNoTitle
 id time
 id title
 id titleDividerNoCustom
+id titleMeals
 id title_template
 id top
 id topPanel
@@ -921,7 +922,6 @@ id uniform
 id up
 id useLogo
 id vegetarian
-id vegetarianMeals
 id withText
 id wrap
 id wrap_content

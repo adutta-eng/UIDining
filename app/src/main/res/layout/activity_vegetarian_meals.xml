@@ -23,11 +23,13 @@
                 android:text="Back" />
 
             <TextView
-                android:id="@+id/vegetarianMeals"
+                android:id="@+id/titleMeals"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Vegetarian Meals"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                app:textAllCaps="true" />
 
             <LinearLayout
                 android:id="@+id/mealsList"
