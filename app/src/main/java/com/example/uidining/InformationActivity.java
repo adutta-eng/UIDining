@@ -43,34 +43,34 @@ public class InformationActivity extends AppCompatActivity {
             double latitude = location.getLatitude();
 
             double ikeDistance = getMiles(latitude, longitude, 40.103946, -88.235378);
-            ike.setText("Ikenberry Dining Hall - " + ikeDistance + " mi");
+            ike.setText("Ikenberry Dining Hall - " + ikeDistance + " mi away");
 
             double parDistance = getMiles(latitude, longitude, 40.100733, -88.221019);
-            par.setText("PAR Dining Hall - " + parDistance + " mi");
+            par.setText("PAR Dining Hall - " + parDistance + " mi away");
 
             double buseyDistance = getMiles(latitude, longitude, 40.105868, -88.222925);
-            busey.setText("Busey Evans Dining Hall - " + buseyDistance + " mi");
+            busey.setText("Busey Evans Dining Hall - " + buseyDistance + " mi away");
 
             double larDistance = getMiles(latitude, longitude, 40.104435, -88.219141);
-            lar.setText("LAR Dining Hall - " + larDistance + " mi");
+            lar.setText("LAR Dining Hall - " + larDistance + " mi away");
 
             double farDistance = getMiles(latitude, longitude, 40.099529, -88.220972);
-            far.setText("FAR Dining Hall - " + farDistance + " mi");
+            far.setText("FAR Dining Hall - " + farDistance + " mi away");
 
             double blueDistance = getMiles(latitude, longitude, 40.109686, -88.227072);
-            blue.setText("Blue 41 - " + blueDistance + " mi");
+            blue.setText("Blue 41 - " + blueDistance + " mi away");
 
             double orangeDistance = getMiles(latitude, longitude, 40.109686, -88.227072);
-            orange.setText("Orange On Green - " + orangeDistance + " mi");
+            orange.setText("Orange On Green - " + orangeDistance + " mi away");
 
             double northDistance = getMiles(latitude, longitude, 40.103890, -88.235375);
-            north.setText("57 North - " + northDistance + " mi");
+            north.setText("57 North - " + northDistance + " mi away");
 
             double caffeDistance = getMiles(latitude, longitude, 40.103890, -88.235375);
-            cafe.setText("Caffeinator - " + caffeDistance + " mi");
+            cafe.setText("Caffeinator - " + caffeDistance + " mi away");
 
             double igniteDistance = getMiles(latitude, longitude, 40.101567, -88.236115);
-            ignite.setText("Ignite - " + igniteDistance + " mi");
+            ignite.setText("Ignite - " + igniteDistance + " mi away");
         }
 
         ike.setOnClickListener(unused -> {
@@ -82,46 +82,64 @@ public class InformationActivity extends AppCompatActivity {
 
         par.setOnClickListener(unused -> {
             Intent intent = new Intent(this, HallInformationActivity.class);
+            intent.putExtra("HallID", Constants.PAR);
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             startActivity(intent);
         });
 
         busey.setOnClickListener(unused -> {
             Intent intent = new Intent(this, HallInformationActivity.class);
+            intent.putExtra("HallID", Constants.BUSEY_EVANS);
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             startActivity(intent);
         });
 
         lar.setOnClickListener(unused -> {
             Intent intent = new Intent(this, HallInformationActivity.class);
+            intent.putExtra("HallID", Constants.LAR);
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             startActivity(intent);
         });
 
         far.setOnClickListener(unused -> {
             Intent intent = new Intent(this, HallInformationActivity.class);
+            intent.putExtra("HallID", Constants.FAR);
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             startActivity(intent);
         });
 
         blue.setOnClickListener(unused -> {
             Intent intent = new Intent(this, HallInformationActivity.class);
+            intent.putExtra("HallID", Constants.BLUE);
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             startActivity(intent);
         });
 
         orange.setOnClickListener(unused -> {
             Intent intent = new Intent(this, HallInformationActivity.class);
+            intent.putExtra("HallID", Constants.ORANGE_ON_GREEN);
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             startActivity(intent);
         });
 
         north.setOnClickListener(unused -> {
             Intent intent = new Intent(this, HallInformationActivity.class);
+            intent.putExtra("HallID", Constants.NORTH);
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             startActivity(intent);
         });
 
         cafe.setOnClickListener(unused -> {
             Intent intent = new Intent(this, HallInformationActivity.class);
+            intent.putExtra("HallID", Constants.CAFFEINATOR);
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             startActivity(intent);
         });
 
         ignite.setOnClickListener(unused -> {
             Intent intent = new Intent(this, HallInformationActivity.class);
+            intent.putExtra("HallID", Constants.IGNITE);
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             startActivity(intent);
         });
 

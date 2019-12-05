@@ -364,6 +364,10 @@
         "source": "/Users/suchetan/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "/Users/suchetan/AndroidStudioProjects/UIDining/app/build/intermediates/res/merged/debug/layout_food_chunk.xml.flat",
+        "source": "/Users/suchetan/AndroidStudioProjects/UIDining/app/src/main/res/layout/food_chunk.xml"
+    },
+    {
         "merged": "/Users/suchetan/AndroidStudioProjects/UIDining/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_checked_mtrl_animation_interpolator_1.xml.flat",
         "source": "/Users/suchetan/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
     },

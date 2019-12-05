@@ -18,37 +18,83 @@
                 android:layout_height="wrap_content"
                 android:text="Open On Google Maps" />
 
+            <Button
+                android:id="@+id/backToInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Back To Locations" />
+
             <TextView
                 android:id="@+id/breakfast"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Breakfast" />
+                android:text="Breakfast"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/lunch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lunch" />
+                android:text="Lunch"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lightLunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Light Lunch"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/dinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dinner" />
+                android:text="Dinner"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lateDinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Late Dinner"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dailyMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily Menu"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/foods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foods"
+                android:textSize="18sp" />
 
             <LinearLayout
+                android:id="@+id/foodList"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/backToInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Back To Hall Information" />
-
-            </LinearLayout>
+                android:orientation="vertical"></LinearLayout>
 
         </LinearLayout>
     </ScrollView>

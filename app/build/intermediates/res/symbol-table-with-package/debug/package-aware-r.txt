@@ -778,6 +778,7 @@ id content
 id contentPanel
 id custom
 id customPanel
+id dailyMenu
 id decor_content_parent
 id default_activity_button
 id dialog_button
@@ -792,6 +793,10 @@ id expanded_menu
 id far
 id far2
 id far3
+id foodList
+id foodName
+id foodType
+id foods
 id forever
 id formalName
 id glutenFree
@@ -822,7 +827,9 @@ id italic
 id lar
 id lar2
 id lar3
+id lateDinner
 id left
+id lightLunch
 id line1
 id line3
 id listMode
@@ -971,6 +978,7 @@ layout activity_main
 layout activity_select_dining_hall
 layout activity_vegetarian_meals
 layout custom_dialog
+layout food_chunk
 layout hall_information
 layout meal_chunk
 layout notification_action

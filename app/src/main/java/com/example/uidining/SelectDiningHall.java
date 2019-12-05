@@ -56,7 +56,7 @@ public class SelectDiningHall extends AppCompatActivity {
             Intent intent = new Intent(this, VegetarianMeals.class);
             intent.putExtra("HallID", Constants.BUSEY_EVANS);
 //            intent.putExtra("Date", formattedDate);
-            intent.putExtra("Date","2019-12-2");
+            intent.putExtra("Date",rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             intent.putExtra("Restriction", dietaryPref);
             startActivity(intent);
         });
