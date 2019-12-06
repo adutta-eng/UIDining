@@ -805,6 +805,7 @@ id group_divider
 id groups
 id halal
 id hallList
+id hallName
 id home
 id homeAsUp
 id icon

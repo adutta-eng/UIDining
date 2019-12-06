@@ -59,6 +59,9 @@ public class HallInformationActivity extends AppCompatActivity {
         int hall = intent.getIntExtra("HallID", 1);
 
         if (hall == Constants.IKE) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("Ikenberry Dining Hall");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.103946, -88.235378"));
             maps.setOnClickListener(unused -> {
@@ -77,6 +80,9 @@ public class HallInformationActivity extends AppCompatActivity {
         }
 
         if (hall == Constants.PAR) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("PAR Dining Hall");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.100733, -88.221019"));
             maps.setOnClickListener(unused -> {
@@ -97,6 +103,9 @@ public class HallInformationActivity extends AppCompatActivity {
         }
 
         if (hall == Constants.BUSEY_EVANS) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("Busey Evans Dining Hall");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.105868, -88.222925"));
             maps.setOnClickListener(unused -> {
@@ -111,6 +120,9 @@ public class HallInformationActivity extends AppCompatActivity {
         }
 
         if (hall == Constants.LAR) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("LAR Dining Hall");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.104435, -88.219141"));
             maps.setOnClickListener(unused -> {
@@ -127,6 +139,9 @@ public class HallInformationActivity extends AppCompatActivity {
         }
 
         if (hall == Constants.FAR) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("FAR Dining Hall");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.099529, -88.220972"));
             maps.setOnClickListener(unused -> {
@@ -141,6 +156,9 @@ public class HallInformationActivity extends AppCompatActivity {
         }
 
         if (hall == Constants.BLUE) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("Blue 41");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.109686, -88.227072"));
             maps.setOnClickListener(unused -> {
@@ -157,6 +175,9 @@ public class HallInformationActivity extends AppCompatActivity {
         }
 
         if (hall == Constants.ORANGE_ON_GREEN) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("Orange On Green");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.109686, -88.227072"));
             maps.setOnClickListener(unused -> {
@@ -169,6 +190,9 @@ public class HallInformationActivity extends AppCompatActivity {
         }
 
         if (hall == Constants.NORTH) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("57 North");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.103890, -88.235375"));
             maps.setOnClickListener(unused -> {
@@ -181,6 +205,9 @@ public class HallInformationActivity extends AppCompatActivity {
         }
 
         if (hall == Constants.CAFFEINATOR) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("Caffeinator");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.103890, -88.235375"));
             maps.setOnClickListener(unused -> {
@@ -193,6 +220,9 @@ public class HallInformationActivity extends AppCompatActivity {
         }
 
         if (hall == Constants.IGNITE) {
+            TextView hallName = findViewById(R.id.hallName);
+            hallName.setText("Ignite");
+
             Button maps = findViewById(R.id.maps);
             Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=40.101567, -88.236115"));
             maps.setOnClickListener(unused -> {
