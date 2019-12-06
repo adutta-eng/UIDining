@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".SelectDiningHall"></activity>
+        <activity android:name=".SelectDiningHall"
+            android:launchMode="singleInstance"></activity>
         <activity android:name=".VegetarianMeals" />
         <activity android:name=".InputPreferences" />
         <activity android:name=".LocationActivity" />
