@@ -126,7 +126,7 @@ public class VegetarianMeals extends AppCompatActivity {
             if(restriction.equals("Halal")) {
                 title.setText("Halal Meals");
                 for (Item item : items) {
-                    if(item.getTraits().contains("Halal")) {
+                    if(item.getTraits().contains("Halal") || item.getTraits().contains("Vegetarian")) {
 //                    System.out.println(item.getFormalName());
                         View mealChunk = getLayoutInflater().inflate(R.layout.meal_chunk, mealsList, false);
                         TextView formalName = mealChunk.findViewById(R.id.formalName);

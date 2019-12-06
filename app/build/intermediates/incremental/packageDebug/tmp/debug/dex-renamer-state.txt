@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Mon Dec 02 10:00:26 CST 2019
+#Thu Dec 05 14:33:52 CST 2019
 base.0=C\:\\Users\\aisha\\AndroidStudioProjects\\UIDining\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-=======
-#Mon Dec 02 09:42:19 CST 2019
-base.0=/Users/suchetan/AndroidStudioProjects/UIDining/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
->>>>>>> d7ad8ea5ed7fe9385ccd26fe5cc812cb31dcd824
 path.0=classes.dex
 renamed.0=classes.dex

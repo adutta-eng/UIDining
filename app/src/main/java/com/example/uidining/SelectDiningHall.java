@@ -19,22 +19,23 @@ public class SelectDiningHall extends AppCompatActivity {
         setContentView(R.layout.activity_select_dining_hall);
         Intent currentIntent = getIntent();
         String dietaryPref = currentIntent.getStringExtra("Restriction");
-        Calendar rightNow = Calendar.getInstance(TimeZone.getTimeZone("CST"));
-//        System.out.println(rightNow.toString());
-//        String formattedDate = rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH);
+        Calendar rightNow = Calendar.getInstance(TimeZone.getTimeZone("America/Chicago"));
+        System.out.println(rightNow.toString());
+        String formattedDate = rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH);
+        System.out.println(formattedDate);
         Button backButton = findViewById(R.id.back);
         backButton.setOnClickListener(unused -> {
             startActivity(new Intent(this, InputPreferences.class));
         });
-        String formattedDate = rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH);
+//        String formattedDate = rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH);
 
         Button ikenberryHall = findViewById(R.id.ikenberryHall);
         ikenberryHall.setOnClickListener(unused -> {
             System.out.println(rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             Intent intent = new Intent(this, VegetarianMeals.class);
             intent.putExtra("HallID", Constants.IKE);
-//            intent.putExtra("Date", formattedDate);
-            intent.putExtra("Date","2019-12-2");
+            intent.putExtra("Date", formattedDate);
+//            intent.putExtra("Date","2019-12-5");
             intent.putExtra("Restriction", dietaryPref);
             startActivity(intent);
         });
@@ -44,8 +45,8 @@ public class SelectDiningHall extends AppCompatActivity {
             System.out.println(rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             Intent intent = new Intent(this, VegetarianMeals.class);
             intent.putExtra("HallID", Constants.PAR);
-//            intent.putExtra("Date", formattedDate);
-            intent.putExtra("Date","2019-12-2");
+            intent.putExtra("Date", formattedDate);
+//            intent.putExtra("Date","2019-12-2");
             intent.putExtra("Restriction", dietaryPref);
             startActivity(intent);
         });
@@ -55,8 +56,8 @@ public class SelectDiningHall extends AppCompatActivity {
             System.out.println(rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             Intent intent = new Intent(this, VegetarianMeals.class);
             intent.putExtra("HallID", Constants.BUSEY_EVANS);
-//            intent.putExtra("Date", formattedDate);
-            intent.putExtra("Date","2019-12-2");
+            intent.putExtra("Date", formattedDate);
+//            intent.putExtra("Date","2019-12-2");
             intent.putExtra("Restriction", dietaryPref);
             startActivity(intent);
         });
@@ -66,8 +67,8 @@ public class SelectDiningHall extends AppCompatActivity {
             System.out.println(rightNow.get(Calendar.YEAR) + "-" + (rightNow.get(Calendar.MONTH) + 1) + "-" + rightNow.get(Calendar.DAY_OF_MONTH));
             Intent intent = new Intent(this, VegetarianMeals.class);
             intent.putExtra("HallID", Constants.LAR);
-//            intent.putExtra("Date", formattedDate);
-            intent.putExtra("Date","2019-12-2");
+            intent.putExtra("Date", formattedDate);
+//            intent.putExtra("Date","2019-12-2");
             intent.putExtra("Restriction", dietaryPref);
             startActivity(intent);
         });
@@ -77,8 +78,8 @@ public class SelectDiningHall extends AppCompatActivity {
         far.setOnClickListener(unused -> {
             Intent intent = new Intent(this, VegetarianMeals.class);
             intent.putExtra("HallID", Constants.FAR);
-//            intent.putExtra("Date", formattedDate);
-            intent.putExtra("Date","2019-12-2");
+            intent.putExtra("Date", formattedDate);
+//            intent.putExtra("Date","2019-12-2");
             intent.putExtra("Restriction", dietaryPref);
             startActivity(intent);
         });
@@ -87,8 +88,8 @@ public class SelectDiningHall extends AppCompatActivity {
         blue.setOnClickListener(unused -> {
             Intent intent = new Intent(this, VegetarianMeals.class);
             intent.putExtra("HallID", Constants.BLUE);
-//            intent.putExtra("Date", formattedDate);
-            intent.putExtra("Date","2019-12-2");
+            intent.putExtra("Date", formattedDate);
+//            intent.putExtra("Date","2019-12-2");
             intent.putExtra("Restriction", dietaryPref);
             startActivity(intent);
         });
@@ -97,15 +98,10 @@ public class SelectDiningHall extends AppCompatActivity {
         orange.setOnClickListener(unused -> {
             Intent intent = new Intent(this, VegetarianMeals.class);
             intent.putExtra("HallID", Constants.ORANGE_ON_GREEN);
-//            intent.putExtra("Date", formattedDate);
-            intent.putExtra("Date","2019-12-2");
+            intent.putExtra("Date", formattedDate);
+//            intent.putExtra("Date","2019-12-2");
             intent.putExtra("Restriction", dietaryPref);
             startActivity(intent);
         });
-
-//        Button backtoPrefs = findViewById(R.id.backToPrefs);
-//        backtoPrefs.setOnClickListener(unused -> {
-//            startActivity(new Intent(this, InputPreferences.class));
-//        });
     }
 }
