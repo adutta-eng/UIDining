@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import java.util.Calendar;
+import java.util.List;
 import java.util.TimeZone;
 
 public class InformationActivity extends AppCompatActivity {
@@ -35,10 +36,8 @@ public class InformationActivity extends AppCompatActivity {
         Button cafe = findViewById(R.id.caffeinator3);
         Button ignite = findViewById(R.id.ignite3);
 
-        requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-            Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            Location location = getLastKnownLocation();
             double longitude = location.getLongitude();
             double latitude = location.getLatitude();
 
@@ -159,5 +158,23 @@ public class InformationActivity extends AppCompatActivity {
         double lngDistance = lngDistanceScale * (firstLng - secLong) * Math.cos(latRadians);
         double meters = Math.sqrt(latDistance * latDistance + lngDistance * lngDistance);
         return (double) Math.round(100 * (meters / 1609.344)) / 100;
+    }
+
+    private Location getLastKnownLocation() {
+        LocationManager mLocationManager;
+        mLocationManager = (LocationManager)getApplicationContext().getSystemService(LOCATION_SERVICE);
+        List<String> providers = mLocationManager.getProviders(true);
+        Location bestLocation = null;
+        for (String provider : providers) {
+            Location l = mLocationManager.getLastKnownLocation(provider);
+            if (l == null) {
+                continue;
+            }
+            if (bestLocation == null || l.getAccuracy() < bestLocation.getAccuracy()) {
+                // Found best last known location: %s", l);
+                bestLocation = l;
+            }
+        }
+        return bestLocation;
     }
 }

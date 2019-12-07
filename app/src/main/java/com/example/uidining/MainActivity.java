@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+
 //        final TextView textView = findViewById(R.id.text);
         Button pref = findViewById(R.id.inputPreference);
         pref.setOnClickListener(unused -> {
