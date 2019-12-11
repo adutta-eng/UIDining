@@ -27,6 +27,11 @@ public class LocationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_location);
         Button ike = findViewById(R.id.ikenberryHall2);
         ike.setOnClickListener(unused -> {
+            startActivity(new Intent(this, HallInformationActivity.class));
+        });
+
+        Button back = findViewById(R.id.locationBack);
+        back.setOnClickListener(unused -> {
             startActivity(new Intent(this, MainActivity.class));
         });
 
